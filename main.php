@@ -28,8 +28,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['edit']) && is_numeric
   <title>PLP Library</title>
   <link rel="stylesheet" href="main-style.css" />
  <link rel="icon" type="image/png" href="plp-logo.png">
+ <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
+
+<div class="welcome-banner">
+  <h2>Welcome to the PLP Library Portal</h2>
+  <p>Check Availability. Borrow Responsibly. Learn Continuously.</p>
+</div>
 
 <div class="container">
   <div class="header">

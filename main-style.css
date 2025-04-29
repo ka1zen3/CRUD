@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+* {
+  font-family: 'Outfit', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('plp.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+    max-width: 1550px;
+    margin: 250px auto 40px; /* Top margin set to 100px */
+    overflow: hidden;
+  }
+
+.header {
+  background-color: darkgreen;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.main-wrapper {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.book-details {
+  flex: 1 1 30%;
+  background-color: white;
+  border: 2px solid darkgreen;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+
+.book-table {
+  flex: 1 1 70%;
+  background-color: white;
+  border: 2px solid darkgreen;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+
+.section-heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: darkgreen;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.section-heading::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: darkgreen;
+  margin-left: 10px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid darkgreen;
+  border-radius: 7px;
+  padding: 15px;
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
+
+.form-group label {
+  font-size: 14px;
+  color:  darkgreen;
+  margin-bottom: 8px;
+  font-weight:bolder;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 1px solid darkgreen;
+  border-radius: 7px;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+button {
+  background-color: #FFD700;
+  color: darkgreen;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s;
+}
+
+button:hover {
+  background-color: darkgreen;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.book-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.book-table th,
+.book-table td {
+  border: 1px solid darkgreen;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.book-table th {
+  background-color: #f1f5f9;
+  color: darkgreen;
+}
+
+@media (max-width: 768px) {
+  .book-details,
+  .book-table {
+    flex: 1 1 100%;
+  }
+}
